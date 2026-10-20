@@ -2,8 +2,6 @@
 
 # 猜词游戏 · 中文语义猜词
 
-<img src="docs/screenshot.png" width="720" />
-
 <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/Flask-3.x-000000?style=for-the-badge&logo=flask&logoColor=white" />
 <img src="https://img.shields.io/badge/NumPy-only%20engine-013243?style=for-the-badge&logo=numpy&logoColor=white" />
@@ -13,12 +11,14 @@
 <p>一个本地就能玩的中文语义猜词游戏：输入任意词，返回它和谜底的语义相似度（0–100），先摸到 100% 的赢。<br>
 复刻抖音直播间「猜词」玩法的完整机制：300 秒一局、三档情报、排行榜去重、名次奖与段位、机器人陪玩、礼物代猜。</p>
 
+<img src="docs/screenshot.png" width="720" />
+
 </div>
 
 ## 这是什么
 
 不是「猜数字」也不是「接龙」——谜底是一个词，你输入的词和它的**词向量余弦相似度**就是你的分数。
-答「荷花」能拿到 78 分、答「桌子」只有 12 分，靠语义远近一步步逼近，比纯瞎猜有意思得多。
+谜底是「莲子」时，答「莲蓬」66.1 分、「荷花」55.7 分、「玫瑰」45.9 分、「苹果」37.3 分，靠语义远近一步步逼近，比纯瞎猜有意思得多。
 
 游戏逻辑全部在本地跑，**不联网、不需要任何大模型 API**：一个 143,613 词的中文词向量表（51 MB，随仓库自带）+ numpy 就够了。
 
