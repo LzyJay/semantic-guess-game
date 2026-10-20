@@ -1,0 +1,5 @@
+flask>=3.0
+numpy>=1.26
+waitress>=3.0
+# 可选：装了它 /health 的 rss_mb 在 Linux/macOS 上也能读到（Windows 下无 psutil 会走 psapi 兜底）
+# psutil>=5.9
